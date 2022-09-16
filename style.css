@@ -1,0 +1,110 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Headings */
+h1 
+{  
+	color: #666; 
+	font-size: 1.5em; 
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+p
+{
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	display: flex;
+}
+
+header, footer
+{
+	background-color: #CCC;
+	padding: 1em;
+}
+
+
+
+section
+{
+	padding: 2em;
+}
+
+/* Navigation */
+
+nav 
+{
+	text-align: right;
+}
+nav li
+{
+	display: inline-block;
+	padding-right: 1em;
+}
+
+nav a
+{
+	color: #000099;
+}
+
+ul
+{
+	padding-left: 1em;
+}
+
+
+/* Forms */
+label 
+{ 
+	text-align: right;
+	margin: 0.6em 0.6em 0 0;
+	width: 300px; 
+	padding: 0.2em;
+}
+
+input, select, textarea 
+{ 
+	margin: 0.5em 0 0 0; 
+}
+
+input, fieldset, textarea, select
+{ 
+	border: 1px solid #CCC; 
+	padding: 0.4em;
+}
+
+legend
+{
+	color: #666;
+}
+
+input[type=submit], input[type=radio]
+{ 
+	margin-right: 20px;
+}
+
+input[type=submit]
+{ 
+	margin-bottom: 20px;
+}
+
+.radioLabel
+{
+	width: auto	;
+	display: inline;
+}
+
+/* .error
+{
+	background-color: #d33;
+	color: #fff;
+	padding: 0.2em ;
+} */
