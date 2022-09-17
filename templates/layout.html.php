@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +8,29 @@
     <title><?= $title ?></title>
     <link href="style.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>Company Name</h1>
-        <nav>
-            <ul>
-                <li><a href="page1.html">Page 1</a></li>
-                <li><a href="page2.html">Page 2</a></li>
-                <li><a href="page3.html">Page 3</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        <?= $output ?>
-    </section>
-    <footer>
-        <p>&copy; <?= date("Y") ?></p>
-    </footer>
 
+<body>
+    <div class="site-wrapper">
+
+        <div class="company full-center">
+            <h1 aria-label="Company Name">
+                <?php echo ' <img src="http://localhost/start/imgs/LogoLarge.gif" /> '; ?>  
+            </h1>
+        </div>
+
+        <div class="about-section full-center">
+            <div class="about-us">
+                <h2>Sports warehouse is coming soon.</h2>
+                <p> If you have any questions,
+                    we would love to hear from you, please complete the following information. </p>
+            </div>
+        </div>
+        <section>
+            <?=
+            $output
+            ?>
+        </section>
+    </div>
 </body>
+
 </html>
