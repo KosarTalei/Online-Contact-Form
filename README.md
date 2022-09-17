@@ -1,5 +1,3 @@
-# Online sports shop
-
 # Project overview
 <p>
 Sports Warehouse is a retail company that would like to start selling sports equipment online. The project will be delivered in four stages.
@@ -14,10 +12,10 @@ The company already has web hosting, which is a Linux server running Apache (v2.
 The project will be delivered in 4 separate stages. Each deliverable will contain some practical creation of an aspect of the project along with documentation.
 
 # Deliverable A – Pre-launch (coming soon) web page
-## Dynamic Web project build stream
+<h2>Dynamic Web project build stream</h2>
 <p>Create a one-page website showing the company logo and a message indicating they will be selling sports equipment online soon. The page must contain a contact form that can be filled out by the visitors of the website to ask questions.</p>
 
-### Implementation of contact page
+<h2>Implementation of contact page:</h2>
 <p>Create the contact page. This page will display the company logo and the following text:
 “Sports warehouse is coming soon. If you have any questions, we would love to hear from you, please complete the following information. “
 The form you create gathers the following data from the user:</p>
@@ -42,15 +40,15 @@ Question
 
 
 # Deliverable B – Static website layout
-## UX Web layout stream
+<h2>UX Web layout stream</h2>
 <p>Use the provided Photoshop design to create the website home page using HTML and CSS. It will be given to the design manager for approval before it is converted to a PHP website.</p>
 
 # Deliverable C – Customer browsing
-## Dynamic Web project build stream
+<h2>Dynamic Web project build stream</h2>
 <p>Add functionality to the website to allow customers to browse and search products using PHP and a database.</p>
 
 # Deliverable D – Customer purchasing and administration
-## Dynamic Web project stream
+<h2>Dynamic Web project stream</h2>
 <p>Add functionality to the website to allow customers to purchase products and to allow staff to maintain products.</p>
 
 
