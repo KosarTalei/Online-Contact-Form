@@ -37,12 +37,12 @@ if (isset($_POST["submitButton"])) {
     //display missing fields
     if ($missingFields) {
         //include missing fields file
-        include "templates/displayMissingFields.html.php";
-        include "templates/registrationForm.html";
+        include "./templates/contactForm/displayMissingFields.html.php";
+        include "./templates/contactForm/registrationForm.html.php";
     } elseif ($problem > 0) {//display un valid fields
         //display process contact
-        include "processContact.php";
-        include "templates/registrationForm.html";
+        include "./processContact.php";
+        include "./templates/contactForm/registrationForm.html.php";
     } else {
         //redirect to thanks.php
         header("Location: thanks.php");
@@ -51,7 +51,7 @@ if (isset($_POST["submitButton"])) {
     }
 } else {
     //first time page is loaded display the form;
-    include "templates/registrationForm.html";
+    include "./templates/contactForm/registrationForm.html.php";
 }
 
 function setValue($fieldName){
@@ -107,6 +107,4 @@ function valid_email($Emailaddress)
 
 $output = ob_get_clean();
 
-include "templates/layout.html.php";
-
-?>
+include "./templates/contactForm/layout.html.php";
