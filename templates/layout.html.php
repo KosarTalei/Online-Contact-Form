@@ -64,10 +64,10 @@
                 <div class="logo-frame">
                     <img src="/DeliverableC/images/sports-warehouse-logo.svg" alt="Sports Warehouse Logo">
                 </div>
-                <form class="search" action="#">
+                <form class="search" action="/DeliverableC/search.php" method="get"><!--action="#">-->
                     <label id="searchLabel" for="search" class="visually-hidden">search products here:</label>
-                    <input class="search__products longeLable" id="search" aria-labelledby="searchLabel" type="text" name="productName" id="productName" placeholder="Search Products" value="">
-                    <button class="search__toggle" id="search-toggle" aria-label="Show/hide search results">
+                    <input class="search__products longeLable" name="search" id="search" aria-labelledby="searchLabel" type="text" name="productName" id="productName" placeholder="Search Products" value="">
+                    <button class="search__toggle" name="submitButton" value="Search" aria-label="Show/hide search results">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                 </form>
