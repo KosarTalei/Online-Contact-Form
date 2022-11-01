@@ -21,13 +21,14 @@
             }
             $itemName = $row["itemName"];
             $itemName = wordwrap($itemName, 20, " <br />\n");
+            $itemId = $row["itemId"];
             //echo gettype($itemName);
             //$itemName = strval($itemName);
             //echo implode(' ', $itemName);
             //$itemName = preg_split('/(?=[A-Z])/', strval($itemName), -1, PREG_SPLIT_NO_EMPTY);
 
         ?>
-            <a class="block" href="#" aria-label="#">
+            <a class="block" href="/DeliverableC/displayItem.php?itemId=<?= $itemId ?>">
                 <article class="products__item item">
                     <div class="item__photo-frame">
                         <img src="<?= $photo ?>" class="item__photo" width="170" height="170" alt="Photo of product">
@@ -42,11 +43,6 @@
                         <?php } ?>
                     </div>
                     <h3 class="item__name">
-                        <?php
-                        //foreach ($itemName as $word) {
-                        //echo "$word <br>";
-                        //}
-                        ?>
                         <?= $itemName ?>
                     </h3>
                     <!--<p class="item__description">< $itemName ?></p>-->

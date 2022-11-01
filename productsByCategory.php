@@ -31,7 +31,7 @@ if (isset($_GET["id"])) {
     $categoryName = $db->executeSQLReturnOneValue($stmt);
 
     //retrieve products
-    $sql = "select photo, price, salePrice, itemName from item where categoryId = :id";
+    $sql = "select photo, price, salePrice, itemName, itemId from item where categoryId = :id";
     $stmt = $pdo->prepare($sql);
     $stmt->bindValue(":id", $_GET["id"]);
     $rows = $db->executeSQL($stmt);

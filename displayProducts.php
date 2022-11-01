@@ -22,7 +22,7 @@ $pdo = $db->connect();
 ob_start();
 
 //set up query to execute products
-$sql = "SELECT photo, price, salePrice, itemName FROM `item`";
+$sql = "SELECT photo, price, salePrice, itemName, itemId FROM `item`";
 $stmt = $pdo->prepare($sql);
 
 //execute SQL query
