@@ -2,7 +2,6 @@
 <p>
 Sports Warehouse is a retail company that would like to start selling sports equipment online. The project will be delivered in four stages.
 </p>
-[DeliverableC - Link](#deliverable-c--customer-browsing)
 
 # Design requirements
 A Photoshop file which contains the desktop design and mobile design for the website.
@@ -91,7 +90,8 @@ For each item, display:</p>
 <li>Identify and create templates to separate the user interface from the programming logic.</li>
 </ul>
 <h2>Section H - Wireframes</h2>
-<p>Create a [wireframe](https://github.com/KosarTalei/Online-sports-shop/tree/main/Documents\wireframe)- _/storyboard to demonstrate the customer purchasing functionality.</p>
+
+Create a [wireframe](https://github.com/KosarTalei/Online-sports-shop/tree/main/Documents/wireframe) _/storyboard to demonstrate the customer purchasing functionality._
 
 # Deliverable D – Customer purchasing and administration
 <h2>Dynamic Web project stream</h2>
