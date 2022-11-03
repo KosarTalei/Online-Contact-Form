@@ -1,11 +1,6 @@
 <?php
 require_once "./classes/DBAccess.php";
-
-$title = "Products by category";
-$dsn = "mysql:host=localhost;dbname=sportswh;charset=utf8";
-$username = "root";
-$password = "";
-
+include "./settings/db.php";
 //create database object
 $db = new DBAccess($dsn, $username, $password);
 
@@ -13,7 +8,7 @@ $db = new DBAccess($dsn, $username, $password);
 $pdo = $db->connect();
 
 //set up query to execute
-$sql = "select categoryName, categoryId from Category";
+$sql = "select categoryName, categoryId from category";
 $stmt = $pdo->prepare($sql);
 
 //execute SQL query
@@ -43,4 +38,4 @@ $output_products = ob_get_clean();
 require_once "./displayCategory.php";
 require_once "./displayCategory-footer.php";
 include "./templates/layout.html.php";
-//$pdo = null;
+$pdo = null;

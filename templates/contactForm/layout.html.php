@@ -25,11 +25,7 @@
                     we would love to hear from you, please complete the following information. </p>
             </div>
         </div>
-        <section>
-            <?=
-            $output
-            ?>
-        </section>
+        <section><?=$output_confirm?></section>
     </div>
 </body>
 

@@ -1,15 +1,6 @@
 <?php
 require_once "classes/DBAccess.php";
 
-/*$title = "display products";
-    $pageHeading = "Products";*/
-
-/*
-    $dsn = "mysql:host=localhost;dbname=sportswh;charset=utf8";
-    $username = "root";
-    $password = "";
-    */
-
 include "settings/db.php";
 
 //create database object

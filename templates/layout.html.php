@@ -78,6 +78,7 @@
             <div class="slideshow-container">
                 <div class="slideshow">
                     <img src="/DeliverableC/images/image-ball.png" alt="sports balls" width="849" height="300">
+                    <!-- /DeliverableC/images/image-ball.png -->
                 </div>
                 <div class="slideshow__overlay">
                     <h2 class="slideshow-view">View our brand <span> new range of</span></h2>

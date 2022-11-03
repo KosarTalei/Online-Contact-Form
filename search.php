@@ -1,6 +1,8 @@
 <?php
 
 require_once "./classes/DBAccess.php";
+include "./settings/db.php";
+
 $title = "Product Search";
 $pageHeading = "Products";
 //start buffer
@@ -12,9 +14,6 @@ ob_start();
 //check if the search button has been pressed
 if (isset($_GET["submitButton"]) && isset($_GET["search"])) {
     $search = $_GET["search"];
-    $dsn = "mysql:host=localhost;dbname=sportswh;charset=utf8";
-    $username = "root";
-    $password = "";
 
     //create database object
     $db = new DBAccess($dsn, $username, $password);
@@ -23,7 +22,7 @@ if (isset($_GET["submitButton"]) && isset($_GET["search"])) {
     $pdo = $db->connect();
 
     //set up query to execute
-    $sql = "select photo, price, salePrice, itemName FROM `item` where itemName like :itemName";
+    $sql = "select photo, price, salePrice, itemName, itemId FROM `item` where itemName like :itemName";
     //= :productName"
     $stmt = $pdo->prepare($sql);
     //$stmt->bindValue(":itemName", "%$search%");//"$search

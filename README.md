@@ -2,6 +2,7 @@
 <p>
 Sports Warehouse is a retail company that would like to start selling sports equipment online. The project will be delivered in four stages.
 </p>
+[DeliverableC - Link](#deliverable-c--customer-browsing)
 
 # Design requirements
 A Photoshop file which contains the desktop design and mobile design for the website.
@@ -45,7 +46,52 @@ Question
 
 # Deliverable C – Customer browsing
 <h2>Dynamic Web project build stream</h2>
-<p>Add functionality to the website to allow customers to browse and search products using PHP and a database.</p>
+<p>For this deliverable the application enables customers to view featured items on the home page, browse, search for items and contact sports warehouse using the contact page.  
+A database needs to be created with the correct tables, columns and relationships. The products and categories are stored in the database. 
+</p>
+<h2>Section A - Home page requirements</h2>
+<p>The home page for the website displays the store’s featured items. These are items that have been marked as featured in the database. Use SQL to retrieve the data. For each item display the item photo, price, sale price (if applicable) and product name.</p>
+<h3>Categories</h3>
+<p>The items for sale are organised into categories. An item belongs to just one category and categories can have many items. The categories displayed in the website are stored in the database. Use SQL to retrieve the data.
+These categories are displayed towards the top of the page and in the footer.</p>
+<h2>Section B - Contact us page</h2>
+<p>The contact page was created in deliverable A – pre-launch. This deliverable involves editing the page layout so it fits with the rest of the site. The contact page can be accessed by clicking on the “Contact Us” link in the top navigation, and at the bottom of the page.</p>
+<h2>Section C - Browsing by category</h2>
+<p>The user can browse the site to view the items for sale. The items can be browsed by selecting the category. When a category is selected all the items that belong to the category are displayed.
+For each item, display:</p>
+<ul>
+<li>Item name</li>
+<li>Price and sale price if applicable</li>
+<li>Photo of item</li>
+</ul>
+<h2>Section D - Searching for an item</h2>
+<p>The user can search for an item by providing the item name or part of the name. Use SQL to retrieve the data.
+For each item, display:</p>
+<ul>
+<li>Item name</li>
+<li>Price and sale price if applicable</li>
+<li>Photo of item</li>
+</ul>
+<h2>Section E - Viewing an item</h2>
+<p>When an item is displayed the user can click on the item to view the items:</p>
+<ul>
+<li>Item name</li>
+<li>Price and sale price if applicable</li>
+<li>Photo of item – display a larger photo for the item</li>
+<li>Description of the item</li>
+</ul>
+<p>Use SQL to retrieve the data.</p>
+<h2>Section F - Coding and database requirements for deliverable C</h2>
+<ul>
+<li>A MySQL database is setup, and the PHP code connects to it with the correct credentials.</li>
+<li>Data for the database is imported into the tables</li>
+<li>Test the database connection works on both the local web server (XAMPP) and the remote web server (Web host)<li>
+<li>Create a class which will handle the database connection and retrieval of data.</li>
+<li>Create a layout template which contains the common elements of the web pages.</li>
+<li>Identify and create templates to separate the user interface from the programming logic.</li>
+</ul>
+<h2>Section H - Wireframes</h2>
+<p>Create a [wireframe](https://github.com/KosarTalei/Online-sports-shop/tree/main/Documents\wireframe)- _/storyboard to demonstrate the customer purchasing functionality.</p>
 
 # Deliverable D – Customer purchasing and administration
 <h2>Dynamic Web project stream</h2>
@@ -54,9 +100,10 @@ Question
 
 # Testing
 <ul>
-<li>Website needs to function well in Edge and Chrome</li>
-<li>Website needs to validate against W3C HTML 5 validation tool:  https://validator.w3.org/ </li>
-<li>Website needs to validate against W3C CSS validation tool: https://jigsaw.w3.org/css-validator/ </li>
+<li>The website functions well in edge and Chrome</li>
+<li>The website validates against W3C HTML 5 validation tool:  https://validator.w3.org/ </li>
+<li>The website validates against W3C CSS validation tool: https://jigsaw.w3.org/css-validator/ </li>
+<li>The website is uploaded to the allocated web server and tested</li>
 </ul>
 
 # Documents

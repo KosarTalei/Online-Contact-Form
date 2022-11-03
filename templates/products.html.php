@@ -45,8 +45,6 @@
                     <h3 class="item__name">
                         <?= $itemName ?>
                     </h3>
-                    <!--<p class="item__description">< $itemName ?></p>-->
-
                 </article>
             </a>
         <?php endforeach; ?>

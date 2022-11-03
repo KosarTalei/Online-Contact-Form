@@ -105,6 +105,6 @@ function valid_email($Emailaddress)
 }
 
 
-$output = ob_get_clean();
+$output_confirm = ob_get_clean();
 
 include "./templates/contactForm/layout.html.php";
