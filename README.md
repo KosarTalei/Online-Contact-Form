@@ -48,6 +48,8 @@ Question
 <p>For this deliverable the application enables customers to view featured items on the home page, browse, search for items and contact sports warehouse using the contact page.  
 A database needs to be created with the correct tables, columns and relationships. The products and categories are stored in the database. 
 </p>
+
+[Click here to visit the website](http://sw-sport-shop.epizy.com/DeliverableC/display.php?i=1)
 <h2>Section A - Home page requirements</h2>
 <p>The home page for the website displays the store’s featured items. These are items that have been marked as featured in the database. Use SQL to retrieve the data. For each item display the item photo, price, sale price (if applicable) and product name.</p>
 <h3>Categories</h3>
