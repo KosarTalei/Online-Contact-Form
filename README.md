@@ -2,7 +2,6 @@
 <p>
 Sports Warehouse is a retail company that would like to start selling sports equipment online. The project will be delivered in four stages.
 </p>
-[DeliverableC - Link](#deliverable-c--customer-browsing)
 
 # Design requirements
 A Photoshop file which contains the desktop design and mobile design for the website.
@@ -49,6 +48,8 @@ Question
 <p>For this deliverable the application enables customers to view featured items on the home page, browse, search for items and contact sports warehouse using the contact page.  
 A database needs to be created with the correct tables, columns and relationships. The products and categories are stored in the database. 
 </p>
+
+[Click here to visit the website](http://sw-sport-shop.epizy.com/DeliverableC/display.php?i=1)
 <h2>Section A - Home page requirements</h2>
 <p>The home page for the website displays the store’s featured items. These are items that have been marked as featured in the database. Use SQL to retrieve the data. For each item display the item photo, price, sale price (if applicable) and product name.</p>
 <h3>Categories</h3>
@@ -91,7 +92,8 @@ For each item, display:</p>
 <li>Identify and create templates to separate the user interface from the programming logic.</li>
 </ul>
 <h2>Section H - Wireframes</h2>
-<p>Create a [wireframe](https://github.com/KosarTalei/Online-sports-shop/tree/main/Documents\wireframe)- _/storyboard to demonstrate the customer purchasing functionality.</p>
+
+Create a [wireframe](https://github.com/KosarTalei/Online-sports-shop/tree/main/Documents/wireframe) _/storyboard to demonstrate the customer purchasing functionality._
 
 # Deliverable D – Customer purchasing and administration
 <h2>Dynamic Web project stream</h2>

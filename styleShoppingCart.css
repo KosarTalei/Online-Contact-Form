@@ -1,0 +1,58 @@
+body
+{
+	font-family: helvetica, arial, sans-serif;
+}
+
+td
+{
+	padding: 5px;
+}
+
+#checkout label
+{
+	width: 150px;
+	display:inline-block;
+}
+
+#products article
+{
+	width: 200px;
+}
+
+#products
+{
+	width: 600px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#cart
+{
+	width: 378px;
+	padding-left: 20px;
+	border: dotted 1px black;
+}
+
+#wrapper
+{
+	width: 1000px;
+	margin: auto;
+}
+
+
+#content
+{
+	display: flex;
+}
+
+.buy
+{
+	height: 2em;
+}
+
+.qty
+{
+	width: 50px;
+	height: 2em;
+	padding-left: 5px;
+}
