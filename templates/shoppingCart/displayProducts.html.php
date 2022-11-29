@@ -3,12 +3,16 @@
 	<section id="products">
 	<?php foreach ($productRows as $row): 		 
 		$itemName = $row["itemName"];
-		$price = sprintf('%01.2f', $row["salePrice"]);
+		$price = sprintf('%01.2f', $row["price"]);
+		if (isset($row["salePrice"])) {
+			$price = sprintf('%01.2f', $row["salePrice"]);
+		}
+
 		$itemId = $row["itemId"];
 
 		?>
 		<article>
-			<form action="shopping.php" method="post">
+			<form class="purchase" action="shopping.php" method="post">
 				<strong><?= $itemName ?></strong>
 				<p>Price $<?= $price ?></p>
 				<p><label for="qty<?=$itemId?>">Quantity:</label> 

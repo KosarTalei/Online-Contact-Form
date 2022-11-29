@@ -1,4 +1,4 @@
-<form method="post" action="thanks.php" id="checkout">
+<form method="post" action="thanksOrder.php" id="checkout">
 	<fieldset>
 		<legend>Delivery Details</legend>
 		<p>

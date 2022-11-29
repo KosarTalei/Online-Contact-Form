@@ -1219,3 +1219,6 @@ b.special {
 .searchLabel{
     
 }
+.purchase >a ,p{
+    color: black;
+}

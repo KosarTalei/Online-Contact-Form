@@ -7,7 +7,7 @@ if (!isset($_SESSION)) {
 }
 
 $title = "Shop";
-$pageHeading = "Products";
+$pageHeading = "Shopping Cart";
 
 //create a product object
 $product = new Product();
@@ -49,7 +49,6 @@ if (isset($_POST["buy"])) {
 
 //remove item from shopping cart
 if (isset($_POST["remove"])) {
-	echo "hereeeee";
 	//check product id was supplied and cart exists in session
 	if (!empty($_POST["productId"]) && isset($_SESSION["cart"])) {
 		$productId = $_POST["productId"];
@@ -70,7 +69,7 @@ if (isset($_POST["remove"])) {
 ob_start();
 
 //display products
-include "templates/shoppingCart/displayProducts.html.php";
+//include "templates/shoppingCart/displayProducts.html.php";
 
 //display shopping cart
 include "templates/shoppingCart/displayShoppingCart.html.php";

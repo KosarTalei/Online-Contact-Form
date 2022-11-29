@@ -56,7 +56,7 @@ class Product
 			$pdo = $this->_db->connect();
 
 			//set up SQL and bind parameters
-			$sql = "select itemId, itemName, salePrice from item where itemId = :itemId";
+			$sql = "select itemId, itemName, price, salePrice from item where itemId = :itemId";
 			$stmt = $pdo->prepare($sql);
 			$stmt->bindParam(':itemId', $id, PDO::PARAM_INT);
 
@@ -69,7 +69,13 @@ class Product
 			//populate the private properties with the retreived values
 			$this->_productId = $row["itemId"];
 			$this->_productName = $row["itemName"];
-			$this->_price = $row["salePrice"];
+			$priceTmp=0;
+			$priceTmp = $row["price"];
+            if (isset($row["salePrice"])) {
+                $priceTmp = $row["salePrice"];
+            }
+			$this->_price = $priceTmp;
+			return $rows;
 		}
 		catch (PDOException $e)
 		{
