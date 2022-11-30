@@ -1,0 +1,23 @@
+body {
+	font-family: helvetica, arial, sans-serif;
+}
+
+a{
+    color: black;
+}
+
+label {
+	width: 150px;
+	display: inline-block;
+}
+
+#wrapper {
+	width: 1000px;
+	margin: auto;
+	background-color: white;
+	color: black;
+}
+
+.error {
+	color: red;
+}

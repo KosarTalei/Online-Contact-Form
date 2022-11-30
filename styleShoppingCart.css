@@ -3,6 +3,10 @@ body
 	font-family: helvetica, arial, sans-serif;
 }
 
+a{
+    color: black;
+}
+
 td
 {
 	padding: 5px;
@@ -31,6 +35,8 @@ td
 	width: 378px;
 	padding-left: 20px;
 	border: dotted 1px black;
+	background-color: white;
+    color: black;
 }
 
 #wrapper

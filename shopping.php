@@ -71,9 +71,12 @@ ob_start();
 //display products
 //include "templates/shoppingCart/displayProducts.html.php";
 
+include "displayCategory.php";
+
 //display shopping cart
 include "templates/shoppingCart/displayShoppingCart.html.php";
 
 $output = ob_get_clean();
 
+include "displayCategory-footer.php";
 include "templates/shoppingCart/layout.html.php";
