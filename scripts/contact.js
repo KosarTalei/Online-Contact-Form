@@ -3,9 +3,7 @@
 const form = document.querySelector("form");
 //attach event to the form
 form.addEventListener("submit", validate);
-
 function validate(event) {
-
     const firstName = document.getElementById("firstName");
     const lastName = document.getElementById("lastName");
     const address = document.getElementById("address");
@@ -16,7 +14,6 @@ function validate(event) {
     const nameOnCard = document.getElementById("nameOnCard");
     const expiry = document.getElementById("expiry");
     const csv = document.getElementById("csv");
-
     let error;
     //clear all errors
     const errorList = document.querySelectorAll(".error");
@@ -63,40 +60,38 @@ function validate(event) {
         error.innerHTML = "Please enter a nameOnCard";
         event.preventDefault();
     }
-    /*var today = new Date();
-    var expDate = new Date($("#cart-expyear").val(),($("#cart-expmonth").val()-1)); // JS Date Month is 0-11 not 1-12 grrr
-    if(today.getTime() > expDate.getTime()) {
-        messages.push("Your Card is expired. Please check expiry date.");
-    }*/
 
-    // Check if date is in correct format
-    var pattern = /(0|1)[0-9]\/(20)[0-9]{2}/;
+    var pattern = /^(0[1-9]|1[0-2])\/2[0-9]{3}$/;///(0|1)[0-9]\/(20)[0-9]{2}/;
     if (expiry.value.match(pattern)) {
-        var date_array = element.value.split('/');
+        
+        var currentDate = new Date();
 
-        // JS Date Month is 0-11 not 1-12
-        var month = date_array[0] - 1;
-        var year = date_array[1];
+        var currentMonth = ("0" + (currentDate.getMonth() + 1)).slice(-2);
+        var currentYear = String(currentDate.getFullYear()).slice(-2);
 
-        // This instruction will create a date object
-        source_date = new Date();
-        alert(source_date.getFullYear());
-        if (year >= source_date.getFullYear()) {
-            if (month < source_date.getMonth()) {
+        var date_array = expiry.value.split('/');
+        var userMonth = date_array[0];
+        var userYear = date_array[1].slice(-2);
+
+        if (currentYear == userYear){
+            if(currentMonth >= userMonth){
                 error = expiry.parentNode.querySelector(".error");
-                error.innerHTML = "Please enter a valid month before"+ month;
+                error.innerHTML = "Please enter a valid month after " + (currentDate.getMonth() + 1);
                 event.preventDefault();
             }
-        } else {
+        }
+        if (userYear < currentYear) {
+            //window.alert("Please enter a valid year before"+ currentYear)
             error = expiry.parentNode.querySelector(".error");
-            error.innerHTML = "Please enter a valid year before"+ year;
+            error.innerHTML = "Please enter a valid date after " + (currentDate.getMonth() + 1)+"/"+currentDate.getFullYear();
             event.preventDefault();
         }
-    }else{
+    } else {
         error = expiry.parentNode.querySelector(".error");
         error.innerHTML = "Please enter a valid expiry date in MM/YYYY";
         event.preventDefault();
     }
+    
 
     var csvno = /^[0-9]{3,4}$/;
     if (csv.value.length === 0 || !csv.value.match(csvno)) {
