@@ -84,7 +84,7 @@ class DBAccess
 		}
 		catch(PDOException $e)
 		{
-			
+
 			if ($e->getCode() == 23000)
 			{
 				$value = -1;

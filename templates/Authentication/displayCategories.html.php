@@ -1,3 +1,5 @@
+<fieldset>
+        <legend>Update Category</legend>
 <table>
     <tr>
         <th>Category Name</th>
@@ -13,3 +15,4 @@
         </tr>
     <?php endforeach; ?>
 </table>
+</fieldset>
