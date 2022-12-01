@@ -1,1 +1,7 @@
-<p>Only authenticated users can see this</p>
+<p>Only authenticated users can update database</p>
+<?php
+include "updatePassword.php";
+include "updateCategory.php";
+include "InsertCategory.php";
+include "deleteCategory.php";
+?>

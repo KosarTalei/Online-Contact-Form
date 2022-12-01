@@ -1,12 +1,16 @@
 <?php
 	require_once "classes/Authentication.php";
 
-	$title = "Update user";
-	$pageHeading = "Update password";
+	$title = "Protected Page";
+	$pageHeading = "Updates";
+
+	//the authentication class is static so there is no need to create an instance of the class
 
 	//the authentication class is static so there is no need to create an instance of the class
 
 	$message = "";
+
+	Authentication::protect();
 
 	if(!empty($_POST["username"]) && !empty($_POST["password"])){
 		//update user password by username
@@ -20,5 +24,6 @@
 
 	$output = ob_get_clean();
 
-	include "templates/Authentication/layout.html.php";
-    
+	include "templates/Authentication/updateLayout.html.php";
+
+?>
