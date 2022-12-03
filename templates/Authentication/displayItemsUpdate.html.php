@@ -1,4 +1,5 @@
 <p><?= $message ?></p>
+
 <fieldset>
     <legend>Update Item</legend>
     <table>
@@ -39,12 +40,10 @@
                     <td><?= $description ?></td>
                     <td><img class="photo" src="<?= $photo ?>" alt="Photo of item"></td>
                     <td><a href="updateProduct.php?id=<?= $itemId ?>#edit">Edit</a></td>
+                </tr>
             </article>
-            </tr>
 
         <?php endforeach; ?>
 
     </table>
 </fieldset>
-
-

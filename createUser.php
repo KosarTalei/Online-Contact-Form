@@ -21,3 +21,4 @@
 	$output = ob_get_clean();
 
 	include "templates/Authentication/layout.html.php";
+?>

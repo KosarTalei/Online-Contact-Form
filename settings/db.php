@@ -10,7 +10,7 @@ if ($_SERVER["SERVER_NAME"] == "localhost" || $_SERVER["SERVER_ADDR"] == "127.0.
     $username = "root";
     $password = "";
 } else {
-    $dsn = "mysql:host=sql110.epizy.com;dbname=epiz_32903894_sportswh;charset=utf8";
-    $username = "epiz_32903894";
-    $password = "J98dKeQ1OhfRB9";
+    $dsn = "mysql:host=sql101.epizy.com;dbname=epiz_32816255_sportswh;charset=utf8";
+    $username = "epiz_32816255";
+    $password = "4C1fjDYsehZJ4";
 }

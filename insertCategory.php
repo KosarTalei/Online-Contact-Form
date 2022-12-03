@@ -24,7 +24,10 @@ if (isset($_POST["submit"])) {
 }
 //start buffer
 ob_start();
+
 //display form
 include "templates/Authentication/insertCategoryForm.html.php";
+
 $output = ob_get_clean();
+
 include "templates/Authentication/updateLayout.html.php";

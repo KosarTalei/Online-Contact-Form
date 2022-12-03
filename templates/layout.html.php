@@ -30,12 +30,12 @@
                 <li class="menu__item"><a class="menu__link" href="#">View Products</a></li>
             </ul>
 
-            <div class="menu-desktop__login"><a class="menu__link" href="login.php">
+            <div class="menu-desktop__login"><a class="menu__link" href="/login.php">
                     <span><i class="fa-solid fa-lock"></i></span>Login</a>
             </div>
 
             <div class="header-shopcart__items">
-                <a class="header-shopcart__item header-shopcart__items__view" href="shopping.php">
+                <a class="header-shopcart__item header-shopcart__items__view" href="/DeliverableC/shopping.php">
                     <span><i class="fa-solid fa-cart-shopping"></i></span>View Cart</a>
                 <a class="header-shopcart__item header-shopcart__items__cart-items-count">0 items</a>
             </div>
@@ -43,15 +43,15 @@
         <!-- Menu -->
         <nav class="nav">
             <ul class="menu">
-                <li class="menu__item"><a class="menu__link" href="login.php">
+                <li class="menu__item"><a class="menu__link" href="/login.php">
                         <span><i class="fa-solid fa-lock"></i></span>Login</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">
+                <li class="menu__item"><a class="menu__link" href="display.php">
                         <span><i class="fa-regular fa-circle"></i></span>Home</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">
                         <span><i class="fa-regular fa-circle"></i></span>About SW</a></li>
                 <li class="menu__item"><a class="menu__link" href="/DeliverableC/registration.php">
                         <span><i class="fa-regular fa-circle"></i></span>Contact Us</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">
+                <li class="menu__item"><a class="menu__link" href="/display.php">
                         <span><i class="fa-regular fa-circle"></i></span>View Products</a></li>
             </ul>
         </nav>
@@ -64,7 +64,8 @@
                 <div class="logo-frame">
                     <img src="/DeliverableC/images/sports-warehouse-logo.svg" alt="Sports Warehouse Logo">
                 </div>
-                <form class="search" action="/DeliverableC/search.php" method="get"><!--action="#">-->
+                <form class="search" action="/DeliverableC/search.php" method="get">
+                    <!--action="#">-->
                     <label id="searchLabel" for="search" class="visually-hidden">search products here:</label>
                     <input class="search__products longeLable" name="search" id="search" aria-labelledby="searchLabel" type="text" name="productName" id="productName" placeholder="Search Products" value="">
                     <button class="search__toggle" name="submitButton" value="Search" aria-label="Show/hide search results">
@@ -72,7 +73,7 @@
                     </button>
                 </form>
             </div>
-  
+
             <?= $output_category ?>
 
             <div class="slideshow-container">

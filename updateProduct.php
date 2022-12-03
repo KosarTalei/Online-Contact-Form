@@ -1,9 +1,11 @@
 <?php
 require_once "classes/DBAccess.php";
 $title = "Update";
-$pageHeading = "Products";
+//$pageHeading = "Products";
+
 //get database settings
 include "settings/db.php";
+
 //create database object
 $db = new DBAccess($dsn, $username, $password);
 //connect to database
@@ -12,6 +14,7 @@ $pdo = $db->connect();
 //get categories to populate drop down list
 $sql = "select categoryId, categoryName from category";
 $stmt = $pdo->prepare($sql);
+
 //execute SQL query
 $categoryRows = $db->executeSQL($stmt);
 
@@ -31,10 +34,8 @@ if (isset($_POST["submit"]) && !empty($_POST["itemName"]) && !empty($_POST["item
     $targetFile = $targetDirectory . $photo;
     //only allow image files
     $imageFileType = pathinfo($targetFile, PATHINFO_EXTENSION);
-    if (
-        $imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
-        && $imageFileType != "gif"
-    ) {
+
+    if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif") {
         $message = "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
         $error = true;
     }
@@ -60,14 +61,12 @@ if (isset($_POST["submit"]) && !empty($_POST["itemName"]) && !empty($_POST["item
             $stmt->bindValue(":photo", $photo, PDO::PARAM_STR);
             //execute SQL query
             $id = $db->executeNonQuery($stmt, false);
+
         } else {
-            $message = "Sorry, there was an error uploading your file. Error Code:" .
-                $_FILES["photo"]["error"];
+            $message = "Sorry, there was an error uploading your file. Error Code:" .$_FILES["photo"]["error"];
             $photo = "";
         }
     }
-
-
 
     //set up query to execute
     //update product
@@ -95,22 +94,28 @@ if (isset($_GET["id"])) {
 } else {
     $prodId = 0;
 }
+
 $sql = "select * from item where itemId = :itemId";
 $stmt = $pdo->prepare($sql);
 $stmt->bindValue(":itemId", $prodId, PDO::PARAM_INT);
 $rows = $db->executeSQL($stmt);
 
 //select all products to display in a table
-$sql = "select itemId, itemName, category.categoryName,category.categoryId,
-    price, salePrice, featured, description, photo from item, Category where category.categoryId = item.categoryId";
+$sql = "select itemId, itemName, category.categoryName,category.categoryId, price, salePrice, featured, 
+description, photo from item, category where category.categoryId = item.categoryId";
 $stmt = $pdo->prepare($sql);
 $itemRows = $db->executeSQL($stmt);
 
 //start buffer
 ob_start();
+
 //display products
 include "templates/Authentication/displayItemsUpdate.html.php";
+
 //display product form
-include "templates/Authentication/UpdateproductForm.html.php";
+include "templates/Authentication/updateProductForm.html.php";
+
 $output = ob_get_clean();
+
 include "templates/Authentication/updateLayout.html.php";
+

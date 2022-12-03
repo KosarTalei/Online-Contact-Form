@@ -1,7 +1,7 @@
 <?php
 require_once "classes/DBAccess.php";
 $title = "Delete";
-$pageHeading = "Items";
+//$pageHeading = "Items";
 
 //get database settings
 include "settings/db.php";

@@ -2,7 +2,7 @@
 	require_once "classes/Authentication.php";
 
 	$title = "Protected Page";
-	$pageHeading = "Updates";
+	//$pageHeading = "Updates";
 
 	//the authentication class is static so there is no need to create an instance of the class
 

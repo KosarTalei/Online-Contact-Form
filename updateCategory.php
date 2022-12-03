@@ -49,7 +49,7 @@ $sql = "select categoryId, categoryName from category";
 $stmt = $pdo->prepare($sql);
 $categoryRows = $db->executeSQL($stmt);
 
-//start buffer
+//start buffer 
 ob_start();
 
 //display categories

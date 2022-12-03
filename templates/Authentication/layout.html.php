@@ -34,7 +34,7 @@ if (!isset($_SESSION)) {
 				<li class="menu__item"><a class="menu__link" href="display.php">Home</a></li>
 				<li class="menu__item"><a class="menu__link" href="#">About SW</a></li>
 				<li class="menu__item"><a class="menu__link" href="/DeliverableC/registration.php">Contact Us</a></li>
-				<li class="menu__item"><a class="menu__link" href="#">View Products</a></li>
+				<li class="menu__item"><a class="menu__link" href="#display.php">View Products</a></li>
 			</ul>
 
 			<div class="menu-desktop__login"><a class="menu__link" href="login.php">

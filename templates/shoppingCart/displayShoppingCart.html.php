@@ -1,4 +1,5 @@
 <section id="cart">
+	
 	<h1>Purchased items</h1>
 	<?php if (isset($_SESSION["cart"])) :
 		$cart = $_SESSION["cart"];
@@ -36,4 +37,5 @@
 		<p>Total: $<?= sprintf('%01.2f', $cart->calculateTotal()) ?></p>
 		<p><a class="colorCorrection" href="checkout.php">Checkout</a></p>
 	<?php endif; ?>
+
 </section>

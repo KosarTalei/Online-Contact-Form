@@ -1,8 +1,8 @@
 <?php
 require_once "./classes/DBAccess.php";
+require_once "./classes/product.php";
+require_once "./classes/ShoppingCart.php";
 include "settings/db.php";
-require_once "classes/product.php";
-require_once "classes/ShoppingCart.php";
 
 if (!isset($_SESSION)) {
 	session_start();

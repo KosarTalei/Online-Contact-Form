@@ -1,9 +1,10 @@
 <?php
 //this class is part of the business layer it uses the DBAccess class
 require_once("DBAccess.php");
-
-class Product
-{
+//include_once("DBAccess.php");
+class product{ 								///////capital p in class name make 
+											//Fatal error: Cannot declare class Product,
+											//because the name is already in use in!
 	//private properties
 	private $_productName;
 	private $_productId;
@@ -11,8 +12,7 @@ class Product
 	private $_db;
 
 	//constructor sets up the database settings and creates a DBAccess object
-	public function __construct()
-	{
+	public function __construct(){
 		//get database settings
 		include "settings/db.php";
 

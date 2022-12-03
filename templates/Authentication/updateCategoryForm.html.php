@@ -9,8 +9,8 @@ if (count($rows) > 0) :
                 <label for="categoryName">Category Name:</label>
                 <input type="text" name="categoryName" id="categoryName" required value="<?=$row["categoryName"] ?>">
             </p>
-            <input type="hidden" value="<?= $row["categoryId"] ?> " name="categoryId">
-            <p><input type="submit" name="submit" value="Update Category"></p>
+            <input type="hidden" value="<?= $row["categoryId"] ?> " name="categoryId"/>
+            <p><input type="submit" name="submit" value="Update Category"/></p>
         </fieldset>
     </form>
     <p><?= $message ?></p>

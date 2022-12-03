@@ -26,9 +26,11 @@ if (isset($_POST["loginSubmit"])) {
 //start buffer
 ob_start();
 
-//display create user form
-include "templates/Authentication/LoginForm.html.php";
+    //echo get_include_path();
+	//display create user form
+	//include "/DeliverableC/templates/Authentication/loginForm.html.php";
+    include "templates/Authentication/loginForm.html.php";
 
-$output = ob_get_clean();
+	$output = ob_get_clean();
 
-include "templates/Authentication/layout.html.php";
+	include "templates/Authentication/layout.html.php";
