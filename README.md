@@ -99,6 +99,31 @@ Create a [wireframe](https://github.com/KosarTalei/Online-sports-shop/tree/main/
 <h2>Dynamic Web project stream</h2>
 <p>Add functionality to the website to allow customers to purchase products and to allow staff to maintain products.</p>
 
+[Click here to visit the website](http://sw-sport-warehouse.epizy.com/DeliverableC/display.php?i=1)
+
+<h2>Section A - Purchase items</h2>
+Items can be added to a shopping cart for purchase. The customer may purchase as many items as they like. 
+
+<h2>Section B - Checkout</h2>
+<p>When the customer is checking out, they will need to fill out some personal and payment details.
+The form data validated using a client-side programming language(JavaScript).
+Once payment is completed the customer will receive an order number to keep for future reference. We will not be using a payment gateway. The credit card details will instead be stored in the database.</p>
+
+<h2>Section C - Authentication </h2>
+<ul>
+<li>Staff members can login using their username and password.</li>
+<li>Staff members can update their own password.</li>
+</ul>
+<p>After a user logs in, a session variable stores the user's credentials so they don't need
+to sign in every time to access all the protected pages.
+Shopping cart items are saved in a session variable, updates, deletes are made to it,
+and the session data is saved for the checkout.</p>
+
+<h2>Section D - Maintain data </h2>
+<ul>
+<li>Staff members can add, delete and modify categories.</li>
+<li>Staff members can add, delete and modify items.</li>
+</ul>
 
 # Testing
 <ul>
