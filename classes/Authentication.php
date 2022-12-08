@@ -98,8 +98,7 @@ class Authentication
 	}
 
 	public static function updateUser($uname, $pword){
-		//hash the password
-		$hash = password_hash($pword, PASSWORD_DEFAULT);
+		$hash = "";
 		//get database settings
 		include "settings/db.php";
 		try {
@@ -109,21 +108,26 @@ class Authentication
 		} catch (PDOException $e) {
 			die("Unable to connect to database, " . $e->getMessage());
 		}
-		//add user to database
-		try {
-			$pdo = self::$_db->connect();
-			//set up query to execute
-			$sql = "update user set `password`='$hash' where `userName` = '$uname'";
-			$stmt = $pdo->prepare($sql);
-			//$stmt->bindValue(":password" , $_POST[$hash], PDO::PARAM_STR);
-			$stmt->bindParam(":username", $uname, PDO::PARAM_STR);
-			$stmt->bindParam(":password", $hash, PDO::PARAM_STR);
-			//execute SQL as the class is static we need to use
-			//the keyword self instead of this
-			$result = self::$_db->executeNonQuery($stmt,false);
-		} catch (PDOException $e) {
-			throw $e;
-		}
-		return "Password was successfully updated";
+			//hash the password
+			$hash = password_hash($pword, PASSWORD_DEFAULT);
+			//user can change password now
+			try {
+				$pdo = self::$_db->connect();
+				//set up query to execute
+				$sql = "update user set password=:password where username = :username";
+				$stmt = $pdo->prepare($sql);
+				//$stmt->bindValue(":password" , $_POST[$hash], PDO::PARAM_STR);
+				$stmt->bindParam(":username", $uname, PDO::PARAM_STR);
+				$stmt->bindParam(":password", $hash, PDO::PARAM_STR);
+				//execute SQL as the class is static we need to use
+				//the keyword self instead of this
+				$result = self::$_db->executeNonQuery($stmt, false);
+			} catch (PDOException $e) {
+				throw $e;
+			}
+			return "Password was successfully updated";
+		/*} else {
+			return false;
+		}*/
 	}
 }

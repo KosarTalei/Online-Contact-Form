@@ -1,29 +1,25 @@
 <?php
-	require_once "classes/Authentication.php";
+require_once "classes/Authentication.php";
 
-	$title = "Protected Page";
-	//$pageHeading = "Updates";
+$title = "Update login details";
+$pageHeading = "Update password";
 
-	//the authentication class is static so there is no need to create an instance of the class
+//the authentication class is static so there is no need to create an instance of the class
 
-	//the authentication class is static so there is no need to create an instance of the class
+$message = "";
 
-	$message = "";
+//Authentication::protect();
+if (!empty($_POST["username"]) && !empty($_POST["password"])) {
+	//update user password by username
+	$message = Authentication::updateUser($_POST["username"], $_POST["password"]);
+	$message1 = Authentication::logout();
+}
+//start buffer
+ob_start();
 
-	Authentication::protect();
+//display update user form
+include "templates/Authentication/updatePasswordForm.php";
 
-	if(!empty($_POST["username"]) && !empty($_POST["password"])){
-		//update user password by username
-		$message = Authentication::updateUser($_POST["username"], $_POST["password"]);
-	}
-	//start buffer
-	ob_start();
+$output = ob_get_clean();
 
-	//display update user form
-	include "templates/Authentication/updatePasswordForm.php";
-
-	$output = ob_get_clean();
-
-	include "templates/Authentication/updateLayout.html.php";
-
-?>
+include "templates/Authentication/updateLayout.html.php";

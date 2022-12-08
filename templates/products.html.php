@@ -28,7 +28,7 @@
             //$itemName = preg_split('/(?=[A-Z])/', strval($itemName), -1, PREG_SPLIT_NO_EMPTY);
 
         ?>
-            <a class="block" href="/DeliverableC/displayItem.php?itemId=<?= $itemId ?>">
+            <a class="block" href="displayItem.php?itemId=<?= $itemId ?>">
                 <article class="products__item item">
                     <div class="item__photo-frame">
                         <img src="<?= $photo ?>" class="item__photo" width="170" height="170" alt="Photo of product">

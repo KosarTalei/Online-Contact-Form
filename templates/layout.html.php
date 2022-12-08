@@ -26,16 +26,16 @@
             <ul class="menu-desktop">
                 <li class="menu__item"><a class="menu__link" href="display.php">Home</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">About SW</a></li>
-                <li class="menu__item"><a class="menu__link" href="/DeliverableC/registration.php">Contact Us</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">View Products</a></li>
+                <li class="menu__item"><a class="menu__link" href="registration.php">Contact Us</a></li>
+                <li class="menu__item"><a class="menu__link" href="display.php">View Products</a></li>
             </ul>
 
-            <div class="menu-desktop__login"><a class="menu__link" href="/login.php">
+            <div class="menu-desktop__login"><a class="menu__link" href="login.php">
                     <span><i class="fa-solid fa-lock"></i></span>Login</a>
             </div>
 
             <div class="header-shopcart__items">
-                <a class="header-shopcart__item header-shopcart__items__view" href="/DeliverableC/shopping.php">
+                <a class="header-shopcart__item header-shopcart__items__view" href="shopping.php">
                     <span><i class="fa-solid fa-cart-shopping"></i></span>View Cart</a>
                 <a class="header-shopcart__item header-shopcart__items__cart-items-count">0 items</a>
             </div>
@@ -43,15 +43,15 @@
         <!-- Menu -->
         <nav class="nav">
             <ul class="menu">
-                <li class="menu__item"><a class="menu__link" href="/login.php">
+                <li class="menu__item"><a class="menu__link" href="login.php">
                         <span><i class="fa-solid fa-lock"></i></span>Login</a></li>
                 <li class="menu__item"><a class="menu__link" href="display.php">
                         <span><i class="fa-regular fa-circle"></i></span>Home</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">
                         <span><i class="fa-regular fa-circle"></i></span>About SW</a></li>
-                <li class="menu__item"><a class="menu__link" href="/DeliverableC/registration.php">
+                <li class="menu__item"><a class="menu__link" href="registration.php">
                         <span><i class="fa-regular fa-circle"></i></span>Contact Us</a></li>
-                <li class="menu__item"><a class="menu__link" href="/display.php">
+                <li class="menu__item"><a class="menu__link" href="display.php">
                         <span><i class="fa-regular fa-circle"></i></span>View Products</a></li>
             </ul>
         </nav>
@@ -62,10 +62,9 @@
             <div class="sw-container">
                 <h1 class="sr-only">SW Sports Warehouse</h1>
                 <div class="logo-frame">
-                    <img src="/DeliverableC/images/sports-warehouse-logo.svg" alt="Sports Warehouse Logo">
+                    <img src="images/sports-warehouse-logo.svg" alt="Sports Warehouse Logo">
                 </div>
-                <form class="search" action="/DeliverableC/search.php" method="get">
-                    <!--action="#">-->
+                <form class="search" action="search.php" method="get"><!--action="#">-->
                     <label id="searchLabel" for="search" class="visually-hidden">search products here:</label>
                     <input class="search__products longeLable" name="search" id="search" aria-labelledby="searchLabel" type="text" name="productName" id="productName" placeholder="Search Products" value="">
                     <button class="search__toggle" name="submitButton" value="Search" aria-label="Show/hide search results">
@@ -73,13 +72,12 @@
                     </button>
                 </form>
             </div>
-
+  
             <?= $output_category ?>
 
             <div class="slideshow-container">
                 <div class="slideshow">
-                    <img src="/DeliverableC/images/image-ball.png" alt="sports balls" width="849" height="300">
-                    <!-- /DeliverableC/images/image-ball.png -->
+                    <img src="images/image-ball.png" alt="sports balls" width="849" height="300">
                 </div>
                 <div class="slideshow__overlay">
                     <h2 class="slideshow-view">View our brand <span> new range of</span></h2>
@@ -112,22 +110,22 @@
                     </div>
                     <div class="brands">
                         <div class="brand__photo-frame">
-                            <img src="/DeliverableC/images/logo_nike.png" class="item__photo" width="70" height="24" alt="Photo of Nike logo">
+                            <img src="images/logo_nike.png" class="item__photo" width="70" height="24" alt="Photo of Nike logo">
                         </div>
                         <div class="brand__photo-frame">
-                            <img src="/DeliverableC/images/logo_adidas.png" class="item__photo" width="70" height="46" alt="Photo of Adidas logo">
+                            <img src="images/logo_adidas.png" class="item__photo" width="70" height="46" alt="Photo of Adidas logo">
                         </div>
                         <div class="brand__photo-frame">
-                            <img src="/DeliverableC/images/logo_skins.png" class="item__photo" width="70" height="16" alt="Photo of Skins logo">
+                            <img src="images/logo_skins.png" class="item__photo" width="70" height="16" alt="Photo of Skins logo">
                         </div>
                         <div class="brand__photo-frame">
-                            <img src="/DeliverableC/images/logo_asics.png" class="item__photo" width="70" height="23" alt="Photo of Asics logo">
+                            <img src="images/logo_asics.png" class="item__photo" width="70" height="23" alt="Photo of Asics logo">
                         </div>
                         <div class="brand__photo-frame">
-                            <img src="/DeliverableC/images/logo_newbalance.png" class="item__photo" width="70" height="37" alt="Photo of New Balance logo">
+                            <img src="images/logo_newbalance.png" class="item__photo" width="70" height="37" alt="Photo of New Balance logo">
                         </div>
                         <div class="brand__photo-frame">
-                            <img src="/DeliverableC/images/logo_wilson.png" class="item__photo" width="70" height="16" alt="Photo of Wilson logo">
+                            <img src="images/logo_wilson.png" class="item__photo" width="70" height="16" alt="Photo of Wilson logo">
                         </div>
                     </div>
                 </div>
@@ -140,7 +138,7 @@
             <ul class="site-nav__items">
                 <li class="site-nav__item"><a class="home__link" href="display.php">Home</a></li>
                 <li class="site-nav__item"><a class="aboutSW__link" href="#">About SW</a></li>
-                <li class="site-nav__item"><a class="contactUs__link" href="/DeliverableC/registration.php">Contact Us</a></li>
+                <li class="site-nav__item"><a class="contactUs__link" href="registration.php">Contact Us</a></li>
                 <li class="site-nav__item"><a class="viewProducts__link" href="#">View Products</a></li>
                 <li class="site-nav__item"><a class="privacy__link" href="#">Privacy Policy</a></li>
             </ul>
@@ -163,7 +161,7 @@
                     <div class="circle"><i class="fa fa-paper-plane fa-2xl" aria-hidden="true"></i></div>
                     <a class="other__link" href="#">Other</a>
                     <ul class="other-infos">
-                        <li class="other-infos__item"><a href="/DeliverableC/registration.php">Online form</a></li>
+                        <li class="other-infos__item"><a href="registration.php">Online form</a></li>
                         <li class="other-infos__item"><a href="#">Email</a></li>
                         <li class="other-infos__item"><a href="#">Phone</a></li>
                         <li class="other-infos__item"><a href="#">Address</a></li>

@@ -10,14 +10,10 @@
 			<input type="password" id="password" name="password" required>
 		</p>
 		<p>
-			<input type="submit" name="updateSubmit" value="Update">
+			<input type="submit" name="submit" value="Update Password">
 		</p>
 	</fieldset>
 </form>
 <p><?= $message ?></p>
 
-<?php if(isset($error)):?>
-	<p class="error"><?= $message ?></p>
-<?php endif; ?>
-
-<p><a href="login.php"><i class="fa-solid fa-arrow-right"></i> Login Again</a></p>
+<!--p><a href="login.php"><i class="fa-solid fa-arrow-right"></i> Login Again</a></p-->

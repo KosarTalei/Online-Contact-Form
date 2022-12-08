@@ -12,6 +12,7 @@ $db = new DBAccess($dsn, $username, $password);
 //connect to database
 $pdo = $db->connect();
 
+
 $message = "";
 //Authentication::protect();
 

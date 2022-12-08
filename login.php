@@ -28,7 +28,6 @@ ob_start();
 
     //echo get_include_path();
 	//display create user form
-	//include "/DeliverableC/templates/Authentication/loginForm.html.php";
     include "templates/Authentication/loginForm.html.php";
 
 	$output = ob_get_clean();

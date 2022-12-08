@@ -3,7 +3,6 @@
 
 	$title = "Create user";
 	$pageHeading = "Create new user";
-
 	//the authentication class is static so there is no need to create an instance of the class
 
 	$message = "";

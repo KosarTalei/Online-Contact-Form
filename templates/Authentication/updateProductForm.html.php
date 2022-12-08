@@ -2,31 +2,31 @@
 if (count($rows) > 0) :
     $row = $rows[0];
 ?>
-    <h2 id="edit">Edit Item</h2>
-    <!--form action="updateProduct.php" method="post"-->
+    <h2 id="edit">Edit Product</h2>
     <form action="updateProduct.php?id=<?= $itemId ?>#itm<?= $itemId ?>" method="post" enctype="multipart/form-data">
         <fieldset>
-            <legend>Update Item Details</legend>
+            <legend>Product Details</legend>
             <p>
                 <label for="itemName">Product Name:</label>
-                <input type="text" name="itemName" id="itemName" required value="<?= $row["itemName"] ?>">
+                <input type="text" name="itemName" id="itemName" required value="<?=$row["itemName"] ?>">
             </p>
 
-            <!--the category ID number to be the selected item in the dropdown list-->
-            <label for="category">Category:</label>
-            <select name="category" id="category">
-                <?php foreach ($categoryRows as $categoryRow) :
-                    $categoryId = $categoryRow["categoryId"];
-                    $categoryName = $categoryRow["categoryName"];
-                    if ($categoryId == $row["categoryId"]) :
-                        //display the category as the selected item in the drop down list
-                ?>
-                        <option value="<?= $categoryId ?>" selected><?= $categoryName ?></option>
-                    <?php else : ?>
-                        <option value="<?= $categoryId ?>"><?= $categoryName ?></option>
-                    <?php endif; ?>
-                <?php endforeach; ?>
-            </select>
+            <p>
+                <label for="category">Category:</label>
+                <select name="category" id="category">
+                    <?php foreach ($categoryRows as $categoryRow) :
+                        $categoryId = $categoryRow["categoryId"];
+                        $categoryName = $categoryRow["categoryName"];
+                        if ($categoryId == $row["categoryId"]) :
+                            //display the category as the selected item in the dropdown list
+                    ?>
+                            <option value="<?= $categoryId ?>" selected><?= $categoryName ?></option>
+                        <?php else : ?>
+                            <option value="<?= $categoryId ?>"><?= $categoryName ?></option>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
+                </select>
+            </p>
 
             <p>
                 <label for="featured">Featured: </label>
@@ -55,8 +55,10 @@ if (count($rows) > 0) :
                 <input type="hidden" name="itemId" value="<?= $itemId ?>">
                 <input type="hidden" name="oldPhoto" value="<?= $row["photo"] ?>">
             </p>
+            
+            <input type="hidden" value="<?= $row["itemId"] ?>" name="itemId">
             <p>
-                <input type="submit" value="Update Item" name="submit">
+                <input type="submit" value="Update Product" name="submit">
             </p>
             <p><?= $message ?></p>
         </fieldset>

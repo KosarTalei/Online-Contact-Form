@@ -33,7 +33,7 @@ if (!isset($_SESSION)) {
 			<ul class="menu-desktop">
 				<li class="menu__item"><a class="menu__link" href="display.php">Home</a></li>
 				<li class="menu__item"><a class="menu__link" href="#">About SW</a></li>
-				<li class="menu__item"><a class="menu__link" href="/DeliverableC/registration.php">Contact Us</a></li>
+				<li class="menu__item"><a class="menu__link" href="registration.php">Contact Us</a></li>
 				<li class="menu__item"><a class="menu__link" href="#display.php">View Products</a></li>
 			</ul>
 
@@ -56,7 +56,7 @@ if (!isset($_SESSION)) {
 						<span><i class="fa-regular fa-circle"></i></span>Home</a></li>
 				<li class="menu__item"><a class="menu__link" href="#">
 						<span><i class="fa-regular fa-circle"></i></span>About SW</a></li>
-				<li class="menu__item"><a class="menu__link" href="/DeliverableC/registration.php">
+				<li class="menu__item"><a class="menu__link" href="registration.php">
 						<span><i class="fa-regular fa-circle"></i></span>Contact Us</a></li>
 				<li class="menu__item"><a class="menu__link" href="#">
 						<span><i class="fa-regular fa-circle"></i></span>View Products</a></li>

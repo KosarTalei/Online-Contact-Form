@@ -6,16 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $title ?></title>
-    <link href="/DeliverableC/styleContactForm.css" rel="stylesheet">
+    <link href="styleContactForm.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="site-wrapper">
 
         <div class="company full-center">
-            <!--<a class="return" href="/DeliverableC/templates/layout.html.php">> Go Back</a>-->
             <div class="logo-frame">
-                <img src="/DeliverableC/images/sports-warehouse-logo.svg" alt="Sports Warehouse Logo">
+                <img src="images/sports-warehouse-logo.svg" alt="Sports Warehouse Logo">
             </div>
         </div>
 
